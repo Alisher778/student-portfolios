@@ -1,29 +1,28 @@
 * {
-    box-sizing: border-box;
-    left: 0;
-    top: 0;
-    right: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body {
     font-family: 'Ubuntu', sans-serif;
-    background: #000;
-    color: #fff;
+    background: #fff;
+    color: #000;
 }
 .container {
+    position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
     max-width: 100vw;
     height: 500px;
     max-height: 100vh;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 #left {
     width: 45%;
     height: 100%;
     padding: 10px 20px 0 150px;
-    background: #000;
+    background: #fff;
 }
 #left h1 {
     margin-top: 80px;
@@ -38,6 +37,8 @@ body {
     background: crimson;
     color: #fff;
     border: none;
+    font-weight: bolder;
+    box-shadow: 5px 5px 10px #ccc;
 }
 #left>#icon>ul {
     padding-left: 0;
@@ -46,28 +47,48 @@ body {
     justify-content: flex-start;
 }
 #left>#icon>ul>li {
-	font-size: 17px;
+    font-size: 17px;
     margin-right: 15px;
-    color: #8bc34a;
+    color: #807272;
     cursor: pointer;
 }
 #left>#icon>ul>li:nth-child(1) {
-	color:crimson;
+    color: crimson;
 }
 .r {
     font-family: 'Pacifico', cursive;
     transform: rotate(-10deg);
     font-size: 25px;
     letter-spacing: 3px;
-    color: #ff8b8b;
+    color: #b18a16;
     margin-bottom: 20px;
+}
+.r b {
+    color: #bb2140;
 }
 #right {
     width: 55%;
     height: 100%;
     margin-top: 20px;
-    background: url(../img/per.jpeg) no-repeat center;
+    background: url(../img/info.jpg) no-repeat center;
     background-size: cover;
+    text-align: center;
+}
+#right h2 {
+    margin-top: 100px;
+    font-size: 25px;
+}
+#right h4 {
+    font-family: 'Indie Flower', cursive;
+    margin-top: 100px;
+    text-align: right;
+    margin-right: 110px;
+}
+#right img {
+    margin-top: 10px;
+    width: 180px;
+    height: 220px;
+    border-radius: 40%;
 }
 #info {
     position: relative;
@@ -82,6 +103,29 @@ body {
     margin-bottom: 50px;
     color: navy;
 }
+#info h3 span, #plus h3 span, #workP h3 span, #mail h3 span {
+    color: #bb2140;
+}
+.r-left {
+    background: #03A9F4;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 80%;
+    z-index: -1;
+}
+.r-right {
+    background: #f75d52;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    z-index: -1;
+}
 .into {
     margin: auto;
     width: 100%;
@@ -94,11 +138,12 @@ body {
     text-align: center;
     width: 100px;
     height: 35px;
-    background: #000;
-    color: green;
+    background: #fff;
+    color: #000;
     border: 1px solid #abcaaa;
     border-radius: 4px;
     cursor: pointer;
+
 }
 #area {
     margin: auto;
@@ -108,8 +153,9 @@ body {
     overflow: hidden;
     width: 80%;
     height: 350px;
-    background: #10100f;
-    color: #fff;
+    background: #fff;
+    box-shadow: 0px 0px 20px #efe8e8;
+    color: #000;
     line-height: 2em;
 }
 #area>.slick-next {
@@ -117,19 +163,22 @@ body {
 }
 /*#biograf, #education, #works, #exper {
 
-	width: 100%;
-	height: 100%;
-	display: none;
+    width: 100%;
+    height: 100%;
+    display: none;
 }*/
 
 .active {
     color: red;
 }
 #plus {
+
+    position: relative;
     width: 85%;
     margin: auto;
     margin-bottom: 100px;
-    color: crimson;
+    margin-top: 150px;
+    color: #6f6868;
     font-weight: 600;
 }
 #plus ul {
@@ -147,6 +196,7 @@ body {
     color: #fff;
 }
 #workP {
+    position: relative;
     width: 100%;
     text-align: center;
 }
@@ -167,9 +217,13 @@ body {
     margin: 0;
     list-style: none;
     text-align: center;
-    background: lightcyan;
+    background: transparent;
+}
+.img>.slick-prev:before, .img>.slick-next:before {
+    color: #000;
 }
 .img>.slick-next {
+    display: none;
     font-size: 20px;
     left: 100%;
 }
@@ -178,6 +232,7 @@ body {
     color: crimson;
 }
 #main {
+    position: relative;
     padding-top: 100px;
     width: 100%;
     height: 500px;
@@ -205,6 +260,33 @@ body {
 .tarif>.slick-next {
     left: 100%;
 }
+.tarif>.slick-prev:before, .tarif>.slick-next:before {
+    color: #6b4a4a;
+}
+#con {
+    position: relative;
+    margin-top: 120px;
+}
+#con>.r-left {
+    background: #03A9F4;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 45px;
+    top: 20%;
+    z-index: -1;
+}
+#con>.r-right {
+    background: #f75d52;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    top: -100px;
+    z-index: -1;
+}
 #mail {
     position: relative;
     margin: auto;
@@ -213,8 +295,8 @@ body {
     width: 80%;
     height: 500px;
     text-align: center;
-    background: #e8e6cd;
-    /*background:/* url(../img/TLX.jpg) no-repeat center;*/
+    background: #fff;
+    box-shadow: 0px 0px 10px #efe8e8;
 }
 #mail>input {
     margin-bottom: 20px;
@@ -235,14 +317,18 @@ body {
     background: crimson;
     color: #fff;
     border: none;
+    box-shadow: 0px 0px 10px #7b7474;
 }
 footer {
+    position: relative;
     display: flex;
     justify-content: flex-end;
     margin-top: 50px;
     padding-top: 50px;
     text-align: center;
     height: 170px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
 }
 footer>#fab {
     width: 20%;
@@ -250,14 +336,38 @@ footer>#fab {
     font-size: 17px;
     /*margin: 0 30px 0 200px*/
     ;
-    color: #8bc34a;
+    color: #807272;
 }
 footer>#fab>ul>li:nth-child(1) {
-	color: crimson;
-	font-weight: bold;
+    color: crimson;
+    font-weight: bold;
 }
 footer>div>ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
+footer>.r-left {
+    background: #f75d52;
+    width: 75px;
+    height: 75px;
+    border-radius: 0% 100% 0% 0%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+    z-index: -1;
+}
+footer>.r-right {
+    background: #03A9F4;
+    width: 100px;
+    height: 100px; 
+    border-radius:100% 0% 0% 0%;
+    position: absolute;
+    right: 0px;
+    top: 110px;
+    z-index: -1;
+}
+@media screen and (max-width: 375px) {
+    
+    }
