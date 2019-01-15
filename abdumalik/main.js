@@ -1,27 +1,44 @@
 $(document).ready(function() {
     $(document).scroll(function() {
        var scrollPosition = $(this).scrollTop();
-     
+        
         var about = $('#info').offset().top;
         var service = $('#plus').offset().top;
         var works = $('#workP').offset().top;
+        var hire =$('#con').offset().top;
 
         if(scrollPosition >= 60 && scrollPosition < about) {
-           $('header').css({'display':'flex', 'position':'fixed'});
+           $('header').addClass('added');
+
         } else if(scrollPosition > about && scrollPosition < service) {
             $('nav .add').removeClass('add');
-            $('nav [data-id=service]').addClass('add');
+            $('nav [data-id=about]').addClass('add');
         } else if(scrollPosition > service && scrollPosition < works) {
             $('nav .add').removeClass('add');
+            $('nav [data-id=service]').addClass('add');
+        } else if(scrollPosition > works && scrollPosition < hire) {
+            $('nav .add').removeClass('add');
             $('nav [data-id=works]').addClass('add');
-        } else if(scrollPosition > works - 100) {
+        } else if(scrollPosition > hire - 100) {
             $('nav .add').removeClass('add');
             $('nav [data-id=hire]').addClass('add');
         } else {
-           //$('header').removeClass('nice-nav');
-           $('nav .add').removeClass('add');
-           $('nav [data-id=about]').addClass('add');
+           //$('header').removeClass('added');
+          $('nav .add').removeClass('add');
+           //$('nav [data-id=about]').addClass('add');
        }
+
+
+       if(scrollPosition > about - 400) {
+           $('#go').fadeIn();
+       } else {
+            $('#go').fadeOut();
+       }
+
+       $('#go').click(function(e) {
+       $('body, html').animate({scrollTop: 0}, 300)
+   })
+
    });
 
     $(window).scroll(function(e) {
