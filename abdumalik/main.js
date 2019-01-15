@@ -4,15 +4,15 @@ $(document).ready(function() {
       console.log("ishlaey");
       
       if(forid=="a"){
-        $('html, body').animate({scrollTop:0}, 1000);
+        $('html, body').animate({scrollTop:0}, 300);
       } else if (forid=="b") {
-        $('html, body').animate({scrollTop:700}, 1000);
+        $('html, body').animate({scrollTop:700}, 500);
       } else if(forid=="c") {
-        $('html, body').animate({scrollTop:1500}, 1000);
+        $('html, body').animate({scrollTop:1500}, 700);
       } else if(forid=="d") {
-        $('html, body').animate({scrollTop:2120}, 1000)
+        $('html, body').animate({scrollTop:2270}, 900)
       } else if(forid=="e"){
-        $('html, body').animate({scrollTop:3300}, 1000);
+        $('html, body').animate({scrollTop:3400}, 1000);
       } else {
 
       }
@@ -49,7 +49,7 @@ $(document).ready(function() {
        }
 
 
-       if(scrollPosition > about - 400) {
+       if(scrollPosition > about - 300) {
            $('#go').fadeIn();
        } else {
             $('#go').fadeOut();
@@ -64,12 +64,12 @@ $(document).ready(function() {
 
     $(window).scroll(function(e) {
       var newScroll = e.currentTarget.scrollY;
-      console.log(e.currentTarget.scrollY);
+      /*console.log(e.currentTarget.scrollY);*/
     });
 
     $("#hire").click(function(){      
         console.log("worked");      
-        $('html, body').animate({scrollTop:2600}, 500);      
+        $('html, body').animate({scrollTop:3400}, 1000);      
 
     });
     $('.into').slick({
