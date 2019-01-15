@@ -1,4 +1,16 @@
 $(document).ready(function() {
+    $(window).scroll(function(e) {
+      var newScroll = e.currentTarget.scrollY;
+      console.log(e.currentTarget.scrollY);
+  })
+    $("#hire").click(function(){
+      
+      console.log("worked");
+      
+        $('html, body').animate({scrollTop:2600}, 500);
+      
+
+    })
     $('.into').slick({
         slidesToShow: 6,
         slidesToScroll: 1,
