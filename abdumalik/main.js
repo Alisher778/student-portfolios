@@ -1,8 +1,34 @@
 $(document).ready(function() {
+    $(document).scroll(function() {
+       var scrollPosition = $(this).scrollTop();
+     
+        var about = $('#info').offset().top;
+        var service = $('#plus').offset().top;
+        var works = $('#workP').offset().top;
+
+        if(scrollPosition >= 60 && scrollPosition < about) {
+           $('header').css({'display':'flex', 'position':'fixed'});
+        } else if(scrollPosition > about && scrollPosition < service) {
+            $('nav .add').removeClass('add');
+            $('nav [data-id=service]').addClass('add');
+        } else if(scrollPosition > service && scrollPosition < works) {
+            $('nav .add').removeClass('add');
+            $('nav [data-id=works]').addClass('add');
+        } else if(scrollPosition > works - 100) {
+            $('nav .add').removeClass('add');
+            $('nav [data-id=hire]').addClass('add');
+        } else {
+           //$('header').removeClass('nice-nav');
+           $('nav .add').removeClass('add');
+           $('nav [data-id=about]').addClass('add');
+       }
+   });
+
     $(window).scroll(function(e) {
       var newScroll = e.currentTarget.scrollY;
       console.log(e.currentTarget.scrollY);
-  })
+  });
+
     $("#hire").click(function(){
       
       console.log("worked");
