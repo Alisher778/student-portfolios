@@ -14,8 +14,8 @@ header {
     justify-content: space-around;
     width: 100vw;
     height: 80px;
-    
-    color: #ccc;
+    font-weight: bold;
+    color: #000;
     font-size: 17px;
     text-align: right;
     align-items: center;
@@ -24,6 +24,7 @@ header {
 
 }
 .added {
+    color: #fff;
     height: 70px;
     background: #000;
 }
@@ -33,18 +34,38 @@ header>.my {
     width: 25%;
 }
 nav {
+    
     width: 60%;
-    display: flex;
-    justify-content: space-around;
+    
 
 
 }
+nav>ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+}
+nav>ul>li {
+    line-height: 70px;
+    text-align: center;
+    width: 170px;
+}
+nav>ul>li:last-child {
+    width: 30px;
+    cursor: pointer;
+
+}
+
 nav div {
     cursor: pointer;
 }
-.add {
-    
-    color: blue;
+.add, nav>ul>li:hover {
+    width: ;
+    height: 70px;
+    line-height: 70px;
+    background: #fff;
+    color: crimson;
     font-size: 22px;
     font-weight: bold;
 }
@@ -133,13 +154,14 @@ nav div {
 }
 #info {
     position: relative;
+    padding-top: 165px;
     margin-top: 50px;
     text-align: center;
     width: 80%;
     margin: auto;
 }
 #info h3, #plus h3, #workP h3, #mail h3 {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 600;
     margin-bottom: 50px;
     color: navy;
@@ -215,6 +237,8 @@ nav div {
 #plus {
 
     position: relative;
+    padding-top: 165px;
+    padding-bottom: 50px;
     width: 85%;
     margin: auto;
     margin-bottom: 100px;
@@ -234,11 +258,12 @@ nav div {
     margin-right: 20px;
 }
 #plus ul h3 {
-    color: #fff;
+    color: #795548;
 }
 #workP {
     position: relative;
     width: 100%;
+    padding-top: 165px;
     text-align: center;
 }
 #workP img {
@@ -306,6 +331,7 @@ nav div {
 }
 #con {
     position: relative;
+    padding-top: 165px;
     margin-top: 120px;
 }
 #con>.r-left {
@@ -315,7 +341,7 @@ nav div {
     border-radius: 50%;
     position: absolute;
     left: 45px;
-    top: 20%;
+    top: 42%;
     z-index: -1;
 }
 #con>.r-right {
@@ -325,7 +351,7 @@ nav div {
     border-radius: 50%;
     position: absolute;
     right: 5px;
-    top: -100px;
+    top: 119px;
     z-index: -1;
 }
 #mail {
