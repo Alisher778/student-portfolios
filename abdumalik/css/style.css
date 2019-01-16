@@ -1,11 +1,10 @@
 * {
-    
     box-sizing: border-box;
-
 }
 body {
     margin: 0;
-    padding: 0;
+    margin-right: 0;
+    max-width: 1200px;
     font-family: 'Ubuntu', sans-serif;
     background: #fff;
     color: #000;
@@ -21,9 +20,7 @@ header {
     font-size: 17px;
     text-align: right;
     align-items: center;
-    
     z-index: 1;
-
 }
 .added {
     color: #fff;
@@ -36,36 +33,24 @@ header>.my {
     width: 25%;
 }
 nav {
-
     width: 60%;
-    
-
-
 }
 nav>ul {
     list-style: none;
     width: 100%;
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
 }
 nav>ul>li {
     line-height: 70px;
     text-align: center;
     width: 160px;
 }
-nav>ul>li:last-child {
-    left: 10px;
-    width: 30px;
-    cursor: pointer;
-
-}
-
 
 nav div {
     cursor: pointer;
 }
 .add, nav>ul>li:hover {
-    
     height: 70px;
     line-height: 70px;
     background: #fff;
@@ -89,6 +74,10 @@ nav div {
     background: #ccc;
 }
 nav>ul>li:nth-child(6) {
+    left: 10px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
     position: relative;
 }
 nav>ul>li:nth-child(6):hover .inmenu {
@@ -99,23 +88,21 @@ nav>ul>li:nth-child(6):hover .inmenu {
     height: 40px;
     line-height: 40px;
     border-bottom: 1px solid;
-    
 }
 .container {
-    
     display: flex;
     justify-content: center;
     width: 100%;
     min-width: 100vw;
     height: 500px;
-    max-height: 100vh;
+    min-height: 100vh;
     padding-top: 80px;
     margin-bottom: 100px;
 }
 #left {
-    width: 45%;
+    width: 30%;
     height: 100%;
-    padding: 10px 20px 0 150px;
+    /*padding-left:10%;*/
     background: #fff;
 }
 #left h1 {
@@ -151,7 +138,6 @@ nav>ul>li:nth-child(6):hover .inmenu {
 }
 .r {
     font-family: 'Pacifico', cursive;
-    
     font-size: 20px;
     letter-spacing: 3px;
     color: #b18a16;
@@ -161,9 +147,10 @@ nav>ul>li:nth-child(6):hover .inmenu {
     color: #bb2140;
 }
 #right {
-    width: 55%;
+    width: 60%;
     height: 100%;
     margin-top: 20px;
+    right: 0;
     background: url(../img/info.jpg) no-repeat center;
     background-size: cover;
     text-align: center;
@@ -174,9 +161,9 @@ nav>ul>li:nth-child(6):hover .inmenu {
 }
 #right h4 {
     font-family: 'Indie Flower', cursive;
-    margin-top: 80px;
+    margin-top: 12%;
     text-align: right;
-    margin-right: 110px;
+    margin-right: 18%;
 }
 #right img {
     margin-top: 10px;
@@ -185,13 +172,12 @@ nav>ul>li:nth-child(6):hover .inmenu {
     border-radius: 40%;
 }
 #info {
-    width: 80%;       
+    width: 80%;
     margin: auto;
     position: relative;
     padding-top: 165px;
     margin-top: 50px;
     text-align: center;
-    
 }
 #info h3, #plus h3, #workP h3, #mail h3 {
     font-size: 35px;
@@ -239,7 +225,7 @@ nav>ul>li:nth-child(6):hover .inmenu {
     border: 1px solid #abcaaa;
     border-radius: 4px;
     cursor: pointer;
-
+    overflow: hidden;
 }
 #area {
     margin: auto;
@@ -248,7 +234,6 @@ nav>ul>li:nth-child(6):hover .inmenu {
     padding: 50px 100px;
     overflow: hidden;
     width: 80%;
-    
     height: 350px;
     background: #fff;
     box-shadow: 0px 0px 20px #efe8e8;
@@ -258,23 +243,15 @@ nav>ul>li:nth-child(6):hover .inmenu {
 #area>.slick-next {
     left: 102%;
 }
-/*#biograf, #education, #works, #exper {
-
-    width: 100%;
-    height: 100%;
-    display: none;
-}*/
 
 .active {
     color: red;
 }
 #plus {
-
     position: relative;
     padding-top: 165px;
     padding-bottom: 50px;
     width: 85%;
-    
     margin: auto;
     margin-bottom: 100px;
     margin-top: 150px;
@@ -299,7 +276,6 @@ nav>ul>li:nth-child(6):hover .inmenu {
     position: relative;
     margin: auto;
     width: 100%;
-    
     padding-top: 165px;
     text-align: center;
 }
@@ -440,9 +416,7 @@ footer {
 footer>#fab {
     width: 20%;
     margin-right: 30px;
-    font-size: 17px;
-    /*margin: 0 30px 0 200px*/
-    ;
+    font-size: 17px;    
     color: #807272;
 }
 footer>#fab>ul>li:nth-child(1) {
@@ -461,14 +435,14 @@ footer>.r-left {
     border-radius: 0% 100% 0% 0%;
     position: absolute;
     left: 0;
-    bottom: 0;    
+    bottom: 0;
     z-index: -1;
 }
 footer>.r-right {
     background: #03A9F4;
     width: 100px;
-    height: 100px; 
-    border-radius:100% 0% 0% 0%;
+    height: 100px;
+    border-radius: 100% 0% 0% 0%;
     position: absolute;
     right: 0px;
     top: 117px;
@@ -488,6 +462,57 @@ footer>.r-right {
     bottom: 30px;
     cursor: pointer;
 }
-@media screen and (max-width: 375px) {
-    
+
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 15px;
     }
+    header>.my {
+        width: 20%;
+    }
+    nav {
+        width: 70%;
+    }
+    #left {
+        padding-left: 10px;
+    }
+    #info>.r-left {
+        left: 0;
+    }
+    #info>.r-right {
+        right: 0;
+    }
+    #plus>ul>li>h3 {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 576px) {
+    header {
+        font-size: 12px;
+    }
+    nav {
+        display: none;
+    }
+    #right {
+        display: none;
+    }
+    .r {
+        font-size: 14px;
+    }
+    #left h1 {
+        font-size: 25px;
+    }
+    #right {
+        margin-top: 0;
+    }
+    .r-left, .r-right {
+        display: none;
+    }
+    #go {
+        display: none;
+    }
+    .tarif {
+        display: none;
+    }
+
+}

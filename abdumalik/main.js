@@ -43,7 +43,7 @@ $(document).ready(function() {
             $('nav ul li .add').removeClass('add');
             $('nav ul li [data-id=hire]').addClass('add');
         }  else {
-           //$('header').removeClass('added');
+           
            $('nav ul li .add').removeClass('add');
            $('nav [data-id=home]').addClass('add');
        }
@@ -73,7 +73,7 @@ $(document).ready(function() {
 
     });
     $('.into').slick({
-        slidesToShow: 6,
+        slidesToShow: 5,
         slidesToScroll: 1,
         focusOnSelect: true,
         asNavFor: '#area'
@@ -93,8 +93,7 @@ $(document).ready(function() {
         autoplaySpeed: 3000,
         cssEase: 'linear',
     })
-    $('.tarif').slick({
-        //dots: true,
+    $('.tarif').slick({       
         infinite: true,
         speed: 500,
         fade: true,
@@ -104,13 +103,8 @@ $(document).ready(function() {
         $(this).addClass('active');
         console.log('actived')
     })
-    /*$('#hire').click(function(e) {
-        $('#mail').css('position', 'fixed');
-        console.log('ishladi');
-    })*/
+    
     $('#mail').mouseleave(function(e) {
         $(this).css('position', 'relative');
     })
 });
-//#423b3b
-//#10100f
