@@ -6,7 +6,7 @@ $(document).ready(function() {
       if(forid=="a"){
         $('html, body').animate({scrollTop:0}, 300);
       } else if (forid=="b") {
-        $('html, body').animate({scrollTop:700}, 500);
+        $('html, body').animate({scrollTop:800}, 500);
       } else if(forid=="c") {
         $('html, body').animate({scrollTop:1600}, 700);
       } else if(forid=="d") {
@@ -97,7 +97,7 @@ $(document).ready(function() {
         cssEase: 'linear',
     })
     $('.tarif').slick({ 
-              
+
         infinite: true,
         speed: 500,
         fade: true,
