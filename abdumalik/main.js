@@ -18,6 +18,9 @@ $(document).ready(function() {
       }
 
     })
+
+       
+ 
     $(document).scroll(function() {
        var scrollPosition = $(this).scrollTop();
         
@@ -72,7 +75,7 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop:3400}, 1000);      
 
     });
-    $('.into').slick({
+   /* $('.into').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
         focusOnSelect: true,
@@ -98,13 +101,21 @@ $(document).ready(function() {
         speed: 500,
         fade: true,
         cssEase: 'linear'
-    })
+    })*/
     $('.into button').click(function() {
         $(this).addClass('active');
         console.log('actived')
     })
     
-    $('#mail').mouseleave(function(e) {
-        $(this).css('position', 'relative');
-    })
+    /*$('#formb').click(function(e) {
+        e.preventDefault();
+        console.log(111)
+
+    });*/
+    $('#sub').click(function(e) {
+        e.preventDefault();
+        console.log(222);
+        
+
+    });
 });
