@@ -8,7 +8,7 @@ $(document).ready(function() {
       } else if (forid=="b") {
         $('html, body').animate({scrollTop:700}, 500);
       } else if(forid=="c") {
-        $('html, body').animate({scrollTop:1500}, 700);
+        $('html, body').animate({scrollTop:1600}, 700);
       } else if(forid=="d") {
         $('html, body').animate({scrollTop:2270}, 900)
       } else if(forid=="e"){
@@ -75,7 +75,7 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop:3400}, 1000);      
 
     });
-   /* $('.into').slick({
+    $('.into').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
         focusOnSelect: true,
@@ -101,7 +101,7 @@ $(document).ready(function() {
         speed: 500,
         fade: true,
         cssEase: 'linear'
-    })*/
+    })
     $('.into button').click(function() {
         $(this).addClass('active');
         console.log('actived')
@@ -115,7 +115,7 @@ $(document).ready(function() {
     $('#sub').click(function(e) {
         e.preventDefault();
         console.log(222);
-        
+
 
     });
 });
