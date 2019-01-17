@@ -46,7 +46,6 @@ nav>ul>li {
     text-align: center;
     width: 160px;
 }
-
 nav div {
     cursor: pointer;
 }
@@ -84,7 +83,7 @@ nav>ul>li:nth-child(6):hover .inmenu {
     display: block;
 }
 .inmenu li {
-    width: 100px;
+    width: 90px;
     height: 40px;
     line-height: 40px;
     border-bottom: 1px solid;
@@ -105,7 +104,6 @@ nav>ul>li:nth-child(6):hover .inmenu {
     height: 100%;
     margin-left: 5%;
     background: #fff;
-
 }
 #left h1 {
     margin-top: 80px;
@@ -156,6 +154,11 @@ nav>ul>li:nth-child(6):hover .inmenu {
     background: url(../img/info.jpg) no-repeat center;
     background-size: cover;
     text-align: center;
+}
+#right h1 {
+    margin-top: 10px;
+    font-size: 30px;
+    display: none;
 }
 #right h2 {
     margin-top: 100px;
@@ -217,7 +220,6 @@ nav>ul>li:nth-child(6):hover .inmenu {
 #bio, #edu, #wor, #exp {
     font-family: 'Noto Serif', serif;
     text-align: center;
-
     font-weight: bolder;
     margin: 20px 10px 0;
     text-align: center;
@@ -246,7 +248,6 @@ nav>ul>li:nth-child(6):hover .inmenu {
 #area>.slick-next {
     left: 102%;
 }
-
 .active {
     color: red;
 }
@@ -276,16 +277,19 @@ nav>ul>li:nth-child(6):hover .inmenu {
     color: #795548;
 }
 #workP {
-    
     /*position: relative;*/
     margin: auto;
-    width: 90%;
+    width: 87%;
     padding-top: 165px;
     text-align: center;
 }
 #workP img {
     /*height: 250px;*/
     margin: 5px;
+}
+#workP img:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
 }
 .img {
     width: 90%;
@@ -314,18 +318,18 @@ nav>ul>li:nth-child(6):hover .inmenu {
     right: 95%;
     color: crimson;
 }
-#main {
+/*#main {
     
-    /*position: relative;
+    position: relative;
     padding-top: 100px;
     width: 100%;
     max-width: 100vw;
     height: 500px;
     background: url(../img/ofis.jpg) no-repeat center;
-    background-size: cover;*/
-}
-#main .tarif {
-    
+    background-size: cover;
+}*/
+
+div.tarif {
     margin: auto;
     margin-top: 100px;
     padding: 50px;
@@ -333,6 +337,9 @@ nav>ul>li:nth-child(6):hover .inmenu {
     height: 400px;
     background: #dbd6c0;
     color: #000;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px #673AB7;
 }
 .tarif h4 {
     margin-top: 50px;
@@ -342,12 +349,14 @@ nav>ul>li:nth-child(6):hover .inmenu {
     color: #423b3b;
 }
 .tarif>.slick-prev {
-    left: -22px;
+    left: 0px;
+    z-index: 1;
 }
 .tarif>.slick-next {
-    left: 100%;
+    left: 96%;
 }
 .tarif>.slick-prev:before, .tarif>.slick-next:before {
+    font-size: 25px;
     color: #6b4a4a;
 }
 #con {
@@ -425,7 +434,7 @@ footer {
 footer>#fab {
     width: 20%;
     margin-right: 30px;
-    font-size: 17px;    
+    font-size: 17px;
     color: #807272;
     cursor: pointer;
 }
@@ -447,7 +456,6 @@ footer>.r-left {
     left: 0;
     bottom: 0;
     z-index: -1;
-    display: none;
 }
 footer>.r-right {
     background: #03A9F4;
@@ -458,8 +466,6 @@ footer>.r-right {
     right: 0px;
     top: 117px;
     z-index: ;
-    display: none;
-
 }
 #go {
     width: 40px;
@@ -475,10 +481,19 @@ footer>.r-right {
     bottom: 30px;
     cursor: pointer;
 }
-.r-left, .r-right {
-    /*display: none;*/
+@media screen and (max-width: 992px) {
+    #left {
+        width: 27%;
+        margin-left: 3%;
+    }
+    #right {
+        width: 70%;
+    }
+    .tarif>.slick-next {
+    left: 95%;
 }
-
+    
+}
 @media screen and (max-width: 768px) {
     header {
         font-size: 15px;
@@ -492,12 +507,19 @@ footer>.r-right {
     #left {
         padding-left: 10px;
     }
+    #left h1 {
+        margin-top: 55px;
+        font-size: 35px;
+    }
     #info>.r-left {
         left: 0;
     }
     #info>.r-right {
         right: 0;
     }
+    .tarif>.slick-next {
+    left: 94%;
+}
     #plus>ul>li>h3 {
         font-size: 22px;
     }
@@ -506,11 +528,35 @@ footer>.r-right {
     header {
         font-size: 12px;
     }
-    nav {
+    nav>ul>li:nth-child(6) {
+        display: block;
+        left: 0;
+        right: 5px;
+        font-size: 15px;
+    }
+    .my {
         display: none;
     }
+    nav {
+        width: 100%;
+    }
+    .container {
+        display: block;
+    }
+    #left {
+        text-align: center;
+        width: 95%;
+        margin: auto;
+        height: 50%;
+    }
     #right {
-        display: none;
+        padding-top: 10px;
+        background: #fff;
+        margin-top: 0;
+        margin: auto;
+    }
+    #right h1 {
+        display: block;
     }
     .r {
         font-size: 14px;
@@ -518,17 +564,98 @@ footer>.r-right {
     #left h1 {
         font-size: 25px;
     }
-    #right {
+    #area {
+        width: 90%;
+    }
+    #plus {
+        padding-top: 50px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    #workP {
+        padding-top: 100px;
+        width: 85%;
+    }
+    #bio, #edu, #wor, #exp {
+        font-size: 11px;
+    }
+    .r-left {
+        width: 100px;
+        height: 100px;
+    }
+    .r-right {
+        width: 40px;
+        height: 40px;
+    }
+    #con>.r-left {
+        left: 10px;
+    }
+    #con>.r-right {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        right: 0;
+        top: 140px;
+    }
+    .tarif>.slick-next {
+    left: 92%;
+    }
+    footer>#fab {
+        width: 30%;
+    }
+
+
+}
+@media screen and (max-width: 375px) {
+    nav {
+        display: none;
+    }
+    header>.my {
+
+        display: block;
+        text-align: center;
+        width: 90%;
+    }
+
+    header>.my>h4 {
+        transform: rotate(-7deg);
+    }
+    nav>ul>li:nth-child(6) .inmenu {
+        display: block;
+        left: 0;
+        font-size: 15px;
+    }
+    #info {
+        padding-top: 50px;
+    }
+    #bio, #edu, #wor, #exp {
+        font-size: 6px;
+    }
+    #plus {
+        padding-top: 0;
+        padding-bottom: 0;
         margin-top: 0;
+        margin-bottom: 0;
     }
-    .r-left, .r-right {
+    #plus ul {
+        flex-direction: column;
+    }
+    #plus ul li {
+        width: 70%;
+    }
+    #mail>form>input {
+    
+    width: 75%;
+    }
+    #workP {
+        width: 72%;
+        padding-top: 20px;
+    }
+    footer>#fab {
         display: none;
     }
-    #go {
-        display: none;
-    }
-    .tarif {
-        display: none;
-    }
+    .tarif>.slick-next {
+    left: 88%;
+}
 
 }
