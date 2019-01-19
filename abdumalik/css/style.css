@@ -170,6 +170,7 @@ nav>ul>li:nth-child(6):hover .inmenu {
     margin-top: 12%;
     text-align: right;
     margin-right: 18%;
+    letter-spacing: 2px;
 }
 #right img {
     margin-top: 10px;
@@ -319,7 +320,7 @@ nav>ul>li:nth-child(6):hover .inmenu {
     right: 95%;
     color: crimson;
 }
-/*#main {
+#main {
     
     position: relative;
     padding-top: 100px;
@@ -328,14 +329,14 @@ nav>ul>li:nth-child(6):hover .inmenu {
     height: 500px;
     background: url(../img/ofis.jpg) no-repeat center;
     background-size: cover;
-}*/
+}
 
 div.tarif {
-    margin: auto;
-    margin-top: 100px;
+    
+    margin-left: 57%;
     padding: 50px;
-    width: 60%;
-    height: 400px;
+    width: 40%;
+    height: 300px;
     background: #dbd6c0;
     color: #000;
     overflow: hidden;
@@ -354,7 +355,7 @@ div.tarif {
     z-index: 1;
 }
 .tarif>.slick-next {
-    left: 96%;
+    left: 94%;
 }
 .tarif>.slick-prev:before, .tarif>.slick-next:before {
     font-size: 25px;
@@ -398,7 +399,7 @@ div.tarif {
     background: #fff;
     box-shadow: 0px 0px 10px #efe8e8;
 }
-#mail>form>input {
+#mail>form>input, #mail>form>textarea {
     margin-bottom: 20px;
     width: 50%;
     height: 40px;
@@ -491,7 +492,7 @@ footer>.r-right {
         width: 70%;
     }
     .tarif>.slick-next {
-    left: 95%;
+    left: 93%;
 }
     
 }
@@ -529,12 +530,12 @@ footer>.r-right {
     header {
         font-size: 12px;
     }
-    nav>ul>li:nth-child(6) {
+    /*nav>ul>li:nth-child(6) {
         display: block;
         left: 0;
         right: 5px;
         font-size: 15px;
-    }
+    }*/
     .my {
         display: none;
     }
@@ -566,7 +567,7 @@ footer>.r-right {
         font-size: 25px;
     }
     #area {
-        width: 90%;
+        width: 100%;
     }
     #plus {
         padding-top: 50px;
@@ -600,7 +601,7 @@ footer>.r-right {
         top: 140px;
     }
     .tarif>.slick-next {
-    left: 92%;
+    left: 88%;
     }
     footer>#fab {
         width: 30%;
@@ -662,7 +663,17 @@ footer>.r-right {
     #workP img {
     height: 110px;
    
-}
+    }
+    #main {
+        background: none;
+    }
+    div.tarif {
+    margin: auto;
+    padding: 50px;
+    width: 80%;
+    height: 300px;
+   
+    }
     footer>#fab {
         display: none;
     }

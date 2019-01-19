@@ -6,13 +6,13 @@ $(document).ready(function() {
       if(forid=="a"){
         $('html, body').animate({scrollTop:0}, 300);
       } else if (forid=="b") {
-        $('html, body').animate({scrollTop:800}, 500);
+        $('html, body').animate({scrollTop:850}, 500);
       } else if(forid=="c") {
-        $('html, body').animate({scrollTop:1600}, 700);
+        $('html, body').animate({scrollTop:1700}, 700);
       } else if(forid=="d") {
-        $('html, body').animate({scrollTop:2270}, 900)
+        $('html, body').animate({scrollTop:2370}, 900)
       } else if(forid=="e"){
-        $('html, body').animate({scrollTop:3400}, 1000);
+        $('html, body').animate({scrollTop:3500}, 1000);
       } else {
 
       }
@@ -22,12 +22,13 @@ $(document).ready(function() {
        
  
     $(document).scroll(function() {
-       var scrollPosition = $(this).scrollTop();
-        
+       var scrollPosition = $(this).scrollTop();        
         var about = $('#info').offset().top;
         var service = $('#plus').offset().top;
         var works = $('#workP').offset().top;
-        var hire =$('#con').offset().top;
+        var hire = $('#con').offset().top;
+        
+        
 
         if(scrollPosition >= 60 && scrollPosition < about) {
            $('header').addClass('added');
@@ -45,11 +46,12 @@ $(document).ready(function() {
         } else if(scrollPosition > hire - 100) {
             $('nav ul li .add').removeClass('add');
             $('nav ul li [data-id=hire]').addClass('add');
-        }  else {
-           
+        } else {           
            $('nav ul li .add').removeClass('add');
            $('nav [data-id=home]').addClass('add');
+        
        }
+       
 
 
        if(scrollPosition > about - 300) {
