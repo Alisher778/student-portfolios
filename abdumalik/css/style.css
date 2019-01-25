@@ -21,12 +21,13 @@ header {
     text-align: right;
     align-items: center;
     z-index: 1;
-
-}
-.added {
     color: #fff;
     height: 70px;
     background: #000;
+
+}
+.added {
+    
 }
 header>.my {
     line-height: 70px;
@@ -59,35 +60,42 @@ nav div {
     font-weight: bold;
 }
 .inmenu {
+    padding-left: 0;
     position: absolute;
     right: 0;
-    top: 70px;
+     width: 100%;
+    top: 55px;
+    text-align: center;
     list-style: none;
     display: flex;
     flex-direction: column;
     font-size: 15px;
-    background: #777;
-    color: #000;
+    background: #000;
+    color: #fff;
     display: none;
 }
 .inmenu li:hover {
-    background: #ccc;
+    background: #fff;
+    color: crimson;
+    font-weight: bold;
 }
-nav>ul>li:nth-child(6) {
+/*nav>ul>li:nth-child(6) {
     left: 10px;
     width: 30px;
     cursor: pointer;
     display: none;
     position: relative;
-}
-nav>ul>li:nth-child(6):hover .inmenu {
-    display: block;
-}
+}*/
+
+
 .inmenu li {
-    width: 90px;
+    width:100%;
     height: 40px;
     line-height: 40px;
-    border-bottom: 1px solid;
+    
+}
+#icn {
+    display: none;
 }
 .container {
     margin: auto;
@@ -129,7 +137,7 @@ nav>ul>li:nth-child(6):hover .inmenu {
     justify-content: flex-start;
 }
 #left>#icon>ul>li {
-    font-size: 17px;
+    font-size: 20px;
     margin-right: 15px;
     color: #807272;
     cursor: pointer;
@@ -398,6 +406,7 @@ div.tarif {
     text-align: center;
     background: #fff;
     box-shadow: 0px 0px 10px #efe8e8;
+    overflow: hidden;
 }
 #mail>form>input, #mail>form>textarea {
     margin-bottom: 20px;
@@ -501,7 +510,7 @@ footer>.r-right {
         font-size: 15px;
     }
     header>.my {
-        width: 20%;
+        width: 22%;
     }
     nav {
         width: 70%;
@@ -530,15 +539,12 @@ footer>.r-right {
     header {
         font-size: 12px;
     }
-    /*nav>ul>li:nth-child(6) {
-        display: block;
-        left: 0;
-        right: 5px;
-        font-size: 15px;
-    }*/
-    .my {
+
+    header>.my {
         display: none;
     }
+    
+    
     nav {
         width: 100%;
     }
@@ -567,8 +573,9 @@ footer>.r-right {
         font-size: 25px;
     }
     #area {
-        width: 100%;
+        padding: 20px;
     }
+    
     #plus {
         padding-top: 50px;
         padding-bottom: 0;
@@ -590,6 +597,9 @@ footer>.r-right {
         width: 40px;
         height: 40px;
     }
+    div.tarif {
+        padding: 20px;
+    }
     #con>.r-left {
         left: 10px;
     }
@@ -609,25 +619,30 @@ footer>.r-right {
 
 
 }
-@media screen and (max-width: 375px) {
-    nav {
-        display: none;
-    }
-    header>.my {
-
+@media screen and (max-width: 376px) {
+    header .my {
         display: block;
         text-align: center;
-        width: 90%;
+        width: 80%;
     }
-
-    header>.my>h4 {
-        transform: rotate(-7deg);
+    #head {
+        display: none;
+        
     }
-    nav>ul>li:nth-child(6) .inmenu {
+    #icn {
+    display: block;
+    margin-right: 15px;
+    right: 0;
+    font-size: 22px;
+    cursor: pointer;
+    }
+    
+    /*#icn:hover .inmenu {
         display: block;
-        left: 0;
-        font-size: 15px;
-    }
+
+        
+        font-size: 15px
+    }*/
     #right h1 {
         margin-top: 40px;
     }
@@ -640,36 +655,37 @@ footer>.r-right {
     #bio, #edu, #wor, #exp {
         font-size: 6px;
     }
+    #area {
+        padding: 10px;
+    }
     #plus {
         padding-top: 0;
         padding-bottom: 0;
         margin-top: 0;
         margin-bottom: 0;
-    }
+    }    
     #plus ul {
         flex-direction: column;
     }
     #plus ul li {
         width: 70%;
     }
-    #mail>form>input {
-    
+    #mail>form>input {    
     width: 75%;
     }
     #workP {
-        width: 72%;
+        width: 66%;
         padding-top: 20px;
     }
     #workP img {
-    height: 110px;
-   
+    height: 110px;   
     }
     #main {
         background: none;
     }
     div.tarif {
     margin: auto;
-    padding: 50px;
+    padding: 20px 30px;
     width: 80%;
     height: 300px;
    
@@ -680,18 +696,14 @@ footer>.r-right {
     .tarif>.slick-next {
     left: 88%;
     }
-    footer>.r-left {
-    
+    footer>.r-left {    
     width: 75px;
-    height: 75px;
-    
-}
-footer>.r-right {
-    
-    width: 75px;
-    height: 75px;
-    top: 142px;
-    
-}
+    height: 75px;            
+    }
+    footer>.r-right {        
+        width: 75px;
+        height: 75px;
+        top: 142px;        
+    }
 
 }

@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $("nav ul li").click(function(){
-      var forid = $(this).attr("id");
+      var forid = $(this).attr("class");
       console.log("ishlaey");
       
       if(forid=="a"){
@@ -17,7 +17,33 @@ $(document).ready(function() {
 
       }
 
-    })
+    });
+
+    /*$("#icn ul li").click(function(){
+        $('.inmenu').css('display','none')
+    });*/
+
+    $("#icn ul li").click(function(){
+      var forc = $(this).attr("class");
+      console.log("ishlaey");
+      
+      if(forc=="a"){
+        $('html, body').animate({scrollTop:0}, 300);
+      } else if (forc=="b") {
+        $('html, body').animate({scrollTop:750}, 500);
+      } else if(forc=="c") {
+        $('html, body').animate({scrollTop:1400}, 700);
+      } else if(forc=="d") {
+        $('html, body').animate({scrollTop:2100}, 900)
+      } else if(forc=="e"){
+        $('html, body').animate({scrollTop:3250}, 1000);
+      } else {
+
+      }
+
+    });
+
+    
 
        
  
@@ -104,21 +130,20 @@ $(document).ready(function() {
         speed: 500,
         fade: true,
         cssEase: 'linear'
-    })
+    });
     $('.into button').click(function() {
         $(this).addClass('active');
         console.log('actived')
-    })
+    });   
     
-    /*$('#formb').click(function(e) {
-        e.preventDefault();
-        console.log(111)
-
-    });*/
     $('#sub').click(function(e) {
         e.preventDefault();
         console.log(222);
-
-
     });
+    $('#icn').click(function() {
+        $('.inmenu').css('display','block');
+    });
+    $('.inmenu').mouseleave(function() {
+        $(this).css('display','none')
+    })
 });
