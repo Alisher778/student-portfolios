@@ -443,14 +443,14 @@ footer {
     letter-spacing: 1px;
     word-spacing: 5px;
 }
-footer>#fab {
+footer #fab ul li a {
     width: 20%;
     margin-right: 30px;
     font-size: 17px;
     color: #807272;
     cursor: pointer;
 }
-footer>#fab>ul>li:nth-child(1) {
+footer>#fab>ul>li:nth-child(1) a {
     color: crimson;
     font-weight: bold;
 }

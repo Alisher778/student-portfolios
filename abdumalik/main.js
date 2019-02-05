@@ -57,7 +57,7 @@ $(document).ready(function() {
         
 
         if(scrollPosition >= 60 && scrollPosition < about) {
-           $('header').addClass('added');
+           /*$('header').addClass('added');*/
            $('nav ul li [data-id=home]').addClass('add');
 
         } else if(scrollPosition > about && scrollPosition < service) {
@@ -147,3 +147,20 @@ $(document).ready(function() {
         $(this).css('display','none')
     })
 });
+/*const hello = {name: 'baba'};
+hello.age = 34;
+console.log(hello);
+
+const ism = hello.name;
+console.log(ism);
+ var obj = Object.assign({}, hello);
+ var lo = {..hello}
+ obj.age = 89;
+ console.log(hello, obj, lo); //immutibality
+var k = [1, 2, 3];
+var p = [...k].concat(k) yoki;
+p.push(k)
+ */
+
+ 
+ 
