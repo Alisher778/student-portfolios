@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 body {
+
     margin: 0;
     margin-right: 0;
     max-width: 100vw;
@@ -262,12 +263,13 @@ nav div {
     color: red;
 }
 #plus {
+
     position: relative;
     padding-top: 165px;
     padding-bottom: 50px;
     width: 85%;
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 0;
     margin-top: 150px;
     color: #6f6868;
     font-weight: 600;
@@ -295,11 +297,17 @@ nav div {
 }
 #workP img {
     height: 200px;
+    width: 240px;
     margin: 5px;
+    margin-bottom: 50px;
 }
+
 #workP img:hover {
+    
     transform: scale(1.1);
     transition-duration: 1s;
+    z-index: 2;
+    transform-origin: 50%;
 }
 .img {
     width: 90%;
@@ -307,7 +315,7 @@ nav div {
 }
 .img>.slick-dots {
     position: relative;
-    bottom: -25px;
+    bottom: 50px;
     display: block;
     width: 100%;
     padding: 0;
@@ -317,17 +325,18 @@ nav div {
     background: transparent;
 }
 .img>.slick-prev:before, .img>.slick-next:before {
-    color: #000;
+    color: ;
 }
-.img>.slick-next {
-    display: none;
+/*.img>.slick-next {
+    display: none !important;
     font-size: 20px;
     left: 100%;
 }
 .img>.slick-prev {
+    display: none !important;
     right: 95%;
     color: crimson;
-}
+}*/
 #main {
     
     position: relative;
@@ -338,6 +347,7 @@ nav div {
     height: 500px;
     background: url(../img/ofis.jpg) no-repeat center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 div.tarif {
@@ -371,6 +381,7 @@ div.tarif {
     color: #6b4a4a;
 }
 #con {
+    
     width: 100%;
     /*min-width: 100vw;*/
     position: relative;
@@ -443,6 +454,11 @@ footer {
     letter-spacing: 1px;
     word-spacing: 5px;
 }
+#imzo {
+    width: 60%;
+    
+
+    }
 footer #fab ul li a {
     width: 20%;
     margin-right: 30px;
@@ -862,6 +878,10 @@ footer>.r-right {
     width: 80%;
     height: 300px;
    
+    }
+     #imzo {
+    width: 90%;
+    text-align: center;
     }
     footer>#fab {
         display: none;

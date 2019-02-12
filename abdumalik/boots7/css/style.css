@@ -1,0 +1,40 @@
+header h3, .fon h3 {
+	letter-spacing: 3px;
+	font-family: 'Yellowtail', cursive;
+}
+main {
+	overflow-y: scroll;
+	height: 100vh;
+}
+#hero .fab {
+	cursor: pointer;
+}
+#area {
+	width: 70%;
+	height: 300px;
+	overflow: hidden;
+	box-shadow: 0px 0px 20px  #efe8e8;
+}
+ul li .fab {
+	font-size: 22px;
+}
+#fikr {
+
+	height: 350px;
+	overflow: hidden;
+	box-shadow: 0px 0px 20px  #efe8e8; 
+}
+.fikr {
+	width: 50px;
+	height: 10px;
+	background: #000;
+}
+#mail {
+	box-shadow: 0px 0px 20px  #efe8e8; 
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff !important;
+    font-weight: bold;
+    background-color: crimson;
+}

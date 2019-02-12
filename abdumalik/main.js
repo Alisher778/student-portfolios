@@ -10,9 +10,9 @@ $(document).ready(function() {
       } else if(forid=="c") {
         $('html, body').animate({scrollTop:1700}, 700);
       } else if(forid=="d") {
-        $('html, body').animate({scrollTop:2370}, 900)
+        $('html, body').animate({scrollTop:2270}, 900)
       } else if(forid=="e"){
-        $('html, body').animate({scrollTop:3500}, 1000);
+        $('html, body').animate({scrollTop:3400}, 1000);
       } else {
 
       }
@@ -115,9 +115,9 @@ $(document).ready(function() {
         asNavFor: '.into',
         focusOnSelect: true
     });
-    $('.img').slick({
+    $('mg').slick({
         dots: true,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         speed: 500,
         autoplay: true,
@@ -147,20 +147,7 @@ $(document).ready(function() {
         $(this).css('display','none')
     })
 });
-/*const hello = {name: 'baba'};
-hello.age = 34;
-console.log(hello);
 
-const ism = hello.name;
-console.log(ism);
- var obj = Object.assign({}, hello);
- var lo = {..hello}
- obj.age = 89;
- console.log(hello, obj, lo); //immutibality
-var k = [1, 2, 3];
-var p = [...k].concat(k) yoki;
-p.push(k)
- */
 
  
  
