@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 body {
-
     margin: 0;
     margin-right: 0;
     max-width: 100vw;
@@ -25,11 +24,8 @@ header {
     color: #fff;
     height: 70px;
     background: #000;
-
 }
-.added {
-    
-}
+.added {}
 header>.my {
     line-height: 70px;
     text-align: left;
@@ -64,7 +60,7 @@ nav div {
     padding-left: 0;
     position: absolute;
     right: 0;
-     width: 100%;
+    width: 100%;
     top: 55px;
     text-align: center;
     list-style: none;
@@ -88,12 +84,10 @@ nav div {
     position: relative;
 }*/
 
-
 .inmenu li {
-    width:100%;
+    width: 100%;
     height: 40px;
     line-height: 40px;
-    
 }
 #icn {
     display: none;
@@ -263,7 +257,6 @@ nav div {
     color: red;
 }
 #plus {
-
     position: relative;
     padding-top: 165px;
     padding-bottom: 50px;
@@ -299,18 +292,15 @@ nav div {
     height: 200px;
     width: 240px;
     margin: 5px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
-
 #workP img:hover {
-    
     transform: scale(1.1);
     transition-duration: 1s;
-    z-index: 2;
-    transform-origin: 50%;
+   
 }
 .img {
-    width: 90%;
+    width: 99%;
     margin: auto;
 }
 .img>.slick-dots {
@@ -337,11 +327,10 @@ nav div {
     right: 95%;
     color: crimson;
 }*/
+
 #main {
-    
     position: relative;
     padding-top: 100px;
-
     width: 100%;
     max-width: 100vw;
     height: 500px;
@@ -349,9 +338,7 @@ nav div {
     background-size: cover;
     background-attachment: fixed;
 }
-
 div.tarif {
-    
     margin-left: 57%;
     padding: 50px;
     width: 40%;
@@ -381,7 +368,6 @@ div.tarif {
     color: #6b4a4a;
 }
 #con {
-    
     width: 100%;
     /*min-width: 100vw;*/
     position: relative;
@@ -455,10 +441,8 @@ footer {
     word-spacing: 5px;
 }
 #imzo {
-    width: 60%;
-    
-
-    }
+    width: 65%;
+}
 footer #fab ul li a {
     width: 20%;
     margin-right: 30px;
@@ -474,6 +458,7 @@ footer>div>ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    margin-right: 25px;
 }
 footer>.r-left {
     background: #f75d52;
@@ -509,6 +494,12 @@ footer>.r-right {
     bottom: 30px;
     cursor: pointer;
 }
+@media screen and (max-width: 1024px) {
+    #workP img {
+        height: 150px;
+        width: 170px;
+    }
+}
 @media screen and (max-width: 992px) {
     #left {
         width: 27%;
@@ -518,9 +509,8 @@ footer>.r-right {
         width: 70%;
     }
     .tarif>.slick-next {
-    left: 93%;
-}
-    
+        left: 92%;
+    }
 }
 @media screen and (max-width: 768px) {
     header {
@@ -546,22 +536,23 @@ footer>.r-right {
         right: 0;
     }
     .tarif>.slick-next {
-    left: 94%;
-}
+        left: 90%;
+    }
     #plus>ul>li>h3 {
         font-size: 22px;
+    }
+    #workP img {
+        height: 100px;
+        width: 120px;
     }
 }
 @media screen and (max-width: 576px) {
     header {
         font-size: 12px;
     }
-
     header>.my {
         display: none;
     }
-    
-    
     nav {
         width: 100%;
     }
@@ -592,7 +583,6 @@ footer>.r-right {
     #area {
         padding: 20px;
     }
-    
     #plus {
         padding-top: 50px;
         padding-bottom: 0;
@@ -601,7 +591,10 @@ footer>.r-right {
     #workP {
         padding-top: 100px;
         width: 83%;
-
+    }
+    #workP img {
+        width: 50%;
+        margin-bottom: 30px;
     }
     #bio, #edu, #wor, #exp {
         font-size: 11px;
@@ -615,6 +608,8 @@ footer>.r-right {
         height: 40px;
     }
     div.tarif {
+        margin-left: 40%;
+        width: 50%;
         padding: 20px;
     }
     #con>.r-left {
@@ -628,24 +623,19 @@ footer>.r-right {
         top: 140px;
     }
     .tarif>.slick-next {
-    left: 88%;
+        left: 88%;
     }
     footer>#fab {
         width: 30%;
     }
-
-
 }
 @media screen and (max-device-width: 576px) {
     header {
         font-size: 12px;
     }
-
     header>.my {
         display: none;
     }
-    
-    
     nav {
         width: 100%;
     }
@@ -676,7 +666,6 @@ footer>.r-right {
     #area {
         padding: 20px;
     }
-    
     #plus {
         padding-top: 50px;
         padding-bottom: 0;
@@ -685,7 +674,6 @@ footer>.r-right {
     #workP {
         padding-top: 100px;
         width: 83%;
-
     }
     #bio, #edu, #wor, #exp {
         font-size: 11px;
@@ -712,13 +700,11 @@ footer>.r-right {
         top: 140px;
     }
     .tarif>.slick-next {
-    left: 88%;
+        left: 88%;
     }
     footer>#fab {
         width: 30%;
     }
-
-
 }
 @media screen and (max-width: 376px) {
     header .my {
@@ -728,16 +714,14 @@ footer>.r-right {
     }
     #head {
         display: none;
-        
     }
     #icn {
-    display: block;
-    margin-right: 15px;
-    right: 0;
-    font-size: 22px;
-    cursor: pointer;
+        display: block;
+        margin-right: 15px;
+        right: 0;
+        font-size: 22px;
+        cursor: pointer;
     }
-    
     /*#icn:hover .inmenu {
         display: block;
 
@@ -748,7 +732,7 @@ footer>.r-right {
         margin-top: 40px;
     }
     #right h2 {
-    margin-top: 70px;
+        margin-top: 70px;
     }
     #info {
         padding-top: 50px;
@@ -764,49 +748,48 @@ footer>.r-right {
         padding-bottom: 0;
         margin-top: 0;
         margin-bottom: 0;
-    }    
+    }
     #plus ul {
         flex-direction: column;
     }
     #plus ul li {
         width: 70%;
     }
-    #mail>form>input {    
-    width: 75%;
+    #mail>form>input {
+        width: 75%;
     }
     #workP {
         width: 66%;
         padding-top: 20px;
     }
     #workP img {
-    height: 110px;   
+        width: 200px;
+        
     }
     #main {
         background: none;
     }
     div.tarif {
-    margin: auto;
-    padding: 20px 30px;
-    width: 80%;
-    height: 300px;
-   
+        margin: auto;
+        padding: 20px 30px;
+        width: 80%;
+        height: 300px;
     }
     footer>#fab {
         display: none;
     }
     .tarif>.slick-next {
-    left: 88%;
+        left: 88%;
     }
-    footer>.r-left {    
-    width: 75px;
-    height: 75px;            
-    }
-    footer>.r-right {        
+    footer>.r-left {
         width: 75px;
         height: 75px;
-        top: 142px;        
     }
-
+    footer>.r-right {
+        width: 75px;
+        height: 75px;
+        top: 142px;
+    }
 }
 @media screen and (max-device-width: 376px) {
     header .my {
@@ -816,16 +799,14 @@ footer>.r-right {
     }
     #head {
         display: none;
-        
     }
     #icn {
-    display: block;
-    margin-right: 15px;
-    right: 0;
-    font-size: 22px;
-    cursor: pointer;
+        display: block;
+        margin-right: 15px;
+        right: 0;
+        font-size: 22px;
+        cursor: pointer;
     }
-    
     /*#icn:hover .inmenu {
         display: block;
 
@@ -836,7 +817,7 @@ footer>.r-right {
         margin-top: 40px;
     }
     #right h2 {
-    margin-top: 70px;
+        margin-top: 70px;
     }
     #info {
         padding-top: 50px;
@@ -852,51 +833,49 @@ footer>.r-right {
         padding-bottom: 0;
         margin-top: 0;
         margin-bottom: 0;
-    }    
+    }
     #plus ul {
         flex-direction: column;
     }
     #plus ul li {
         width: 70%;
     }
-    #mail>form>input {    
-    width: 75%;
+    #mail>form>input {
+        width: 75%;
     }
     #workP {
         width: 66%;
         padding-top: 20px;
     }
     #workP img {
-    height: 110px;   
+        width: 200px;
     }
     #main {
         background: none;
     }
     div.tarif {
-    margin: auto;
-    padding: 20px 30px;
-    width: 80%;
-    height: 300px;
-   
+        margin: auto;
+        padding: 20px 30px;
+        width: 80%;
+        height: 300px;
     }
-     #imzo {
-    width: 90%;
-    text-align: center;
+    #imzo {
+        width: 90%;
+        text-align: center;
     }
     footer>#fab {
         display: none;
     }
     .tarif>.slick-next {
-    left: 88%;
+        left: 88%;
     }
-    footer>.r-left {    
-    width: 75px;
-    height: 75px;            
-    }
-    footer>.r-right {        
+    footer>.r-left {
         width: 75px;
         height: 75px;
-        top: 142px;        
     }
-
+    footer>.r-right {
+        width: 75px;
+        height: 75px;
+        top: 142px;
+    }
 }

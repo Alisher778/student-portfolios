@@ -19,9 +19,7 @@ $(document).ready(function() {
 
     });
 
-    /*$("#icn ul li").click(function(){
-        $('.inmenu').css('display','none')
-    });*/
+   
 
     $("#icn ul li").click(function(){
       var forc = $(this).attr("class");
@@ -36,7 +34,7 @@ $(document).ready(function() {
       } else if(forc=="d") {
         $('html, body').animate({scrollTop:2100}, 900)
       } else if(forc=="e"){
-        $('html, body').animate({scrollTop:3250}, 1000);
+        $('html, body').animate({scrollTop:3500}, 1000);
       } else {
 
       }
