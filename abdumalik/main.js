@@ -4,7 +4,7 @@ $(document).ready(function() {
       console.log("ishlaey");
       
       if(forid=="a"){
-        $('html, body').animate({scrollTop:0}, 300);
+        $('html, body').animate({scrollTop:0}, 500);
       } else if (forid=="b") {
         $('html, body').animate({scrollTop:850}, 500);
       } else if(forid=="c") {
@@ -26,15 +26,15 @@ $(document).ready(function() {
       console.log("ishlaey");
       
       if(forc=="a"){
-        $('html, body').animate({scrollTop:0}, 300);
+        $('html, body').animate({scrollTop:0}, 500);
       } else if (forc=="b") {
         $('html, body').animate({scrollTop:750}, 500);
       } else if(forc=="c") {
-        $('html, body').animate({scrollTop:1400}, 700);
+        $('html, body').animate({scrollTop:1440}, 700);
       } else if(forc=="d") {
-        $('html, body').animate({scrollTop:2100}, 900)
+        $('html, body').animate({scrollTop:2200}, 900)
       } else if(forc=="e"){
-        $('html, body').animate({scrollTop:3500}, 1000);
+        $('html, body').animate({scrollTop:3600}, 1000);
       } else {
 
       }
