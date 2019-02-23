@@ -1,0 +1,103 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;	
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 12px;
+}
+.help {
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+}
+.icons li {
+	height:50px;
+	font-size: 18px;
+}
+.icons li:hover {
+	background: #eef;
+	color: blue;
+
+}
+#sred {
+	height: 635px;
+}
+.btn1 {
+	width: 110px;
+	height: 28px;
+	font-size: 12px;
+	border-radius: 15px;
+	overflow: hidden;
+}
+.btn2 {
+	width: 150px;
+}
+.bt  .fas {
+	transform: rotate(110deg);
+}
+#info {
+	position: absolute;
+	bottom: 20px;
+}
+
+.lastdiv {
+	width: 250px;
+	z-index: 1;
+	bottom: 45px;
+	left:10px;
+	box-shadow: 0px 0px 10px #ccc;
+	display: none;
+}
+.lastdiv1{
+	width: 270px;
+	z-index: 1;
+	bottom: 55px;
+	right: 0;
+	box-shadow: 0px 0px 10px #ccc;
+	display: none;
+}
+.lastdiv1 img {
+	width: 50px;
+}
+.lastoff {
+	position: absolute;
+	bottom: 7px;
+}
+.lastoff img {
+	width: 40px;
+	height: 40px;
+}
+
+.img1 {
+	width: 100px;
+}
+@media screen and (max-width: 992px) {
+	body {
+		font-size: 10px;
+	}
+	.help {
+		width: 13px;
+		height: 13px;
+	}
+	.btn1 {	
+		font-size: 10px;
+	
+	}
+}
+@media screen and (max-width: 768px) {
+	.btn1 {	
+		width: 90px;
+		height: 25px;
+		font-size: 8px;	
+	}
+	.btn2 {
+		width: 120px;
+    }
+    .help {
+		width: 10px;
+		height: 10px;
+	}
+}

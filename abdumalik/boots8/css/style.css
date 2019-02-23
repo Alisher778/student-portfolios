@@ -1,0 +1,79 @@
+#hero {
+	background: url(../../img/br.jpg) no-repeat;
+	background-size: cover;
+}
+header {
+	background-color:rgba(0, 0, 0, 0.5);
+	font-size: 14px;
+}
+header h3, .fon h3 {
+	letter-spacing: 3px;
+	font-family: 'Yellowtail', cursive;
+}
+header .fab {
+	font-size: 20px;
+}
+main {
+	overflow-y: scroll;
+	height: 100vh;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #fff;
+    color: crimson !important;
+    font-weight: bold;
+}
+#hero h1 {
+	font-family: 'Patua One', cursive;
+	
+}
+#hero h5 {
+	letter-spacing: 2px;
+	/*color: #9E9E9E;*/
+}
+#hero button {
+	background-color:rgba(0, 0, 0, 0.4);
+}
+#cakes {
+
+}
+
+#pancake {
+	position: relative;
+	background: url(../../img/pastry.jpg) no-repeat;
+	background-size: cover;
+}
+.img {
+	width: 70px;
+	height: 70px;
+
+}
+#pancake .row {
+	position: relative;
+
+}
+#badge {
+	position: absolute;
+	height: 150px;
+	background-color:rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 0px 20px  #000; 
+	right: 50px;
+    top:-40px;
+    z-index: 3;
+}
+#break {
+	background: url(../../img/38.jpg)no-repeat;
+	background-size: cover;
+}
+#sand {
+	position: relative;
+}
+#grad {
+	position: absolute;
+	width: 120px;
+	background-color:rgba(255, 255, 255, 0.7);
+	right: 70px;
+	top: 40px;
+}
+
+    

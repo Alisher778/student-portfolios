@@ -1,0 +1,616 @@
+* {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    font-smoothing: antialiased;
+}
+.con {
+    display: flex;
+    justify-content: flex-start;
+    width: 85%;
+    max-width: 100vw;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+/* header*/
+
+header {
+    margin-top: 15px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    
+    align-items: center;
+    flex-direction: flex-start;
+}
+#log {
+    width: 35px;
+    height: 40px;
+    border: none;
+    background: orange;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+}
+#bars {
+    display: none;
+    color: #fff;
+    font-size: 20px;
+}
+#bars:hover {
+    color: black;
+
+}
+#logo {
+    width: 5%;
+    justify-content: flex-start;
+}
+.menu {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu a {
+    text-decoration: none;
+    color: #fff8f8;
+    font-size: 12px;
+    font-weight: bold;
+}
+.menu, .soc {
+    list-style: none;
+}
+.soc {
+    margin-left: 80px;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+.soc i {
+    color: #fff;
+}
+.z {
+    border: none;
+    width: 35px;
+    height: 35px;
+    margin-left: 35px;
+    border-radius: 50%;
+    background: #abf1ea;
+    line-height: 35px;
+    text-align: center;
+}
+#hero {
+    width: 100%;
+    max-width: 100vw;
+    height: 900px;
+    background: #00c4c5;
+}
+#ldiv, #rdiv {
+    margin-top: 85px;
+    width: 49%;
+    height: 800px;
+}
+#ldiv {
+    background: url(../img/20.png) no-repeat center;
+    background-size: cover;
+}
+#rdiv {
+    margin-left: 20px;
+    color: #fff;
+}
+#rdiv h1 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 90px;
+    line-height: 1em;
+    font-weight: 900;
+}
+#rdiv h2 {
+    font-size: 20px;
+}
+#into {
+    width: 100%;
+    height: 552px;
+    background: #62c7c7;
+    padding: 40px 25px;
+    font-weight: bold;
+}
+#into form input {
+    margin: 25px 0;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid #e2f1e1;
+    color: #e2f1e1;
+}
+#into form select {
+    margin: 25px 0;
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid #e2f1e1;
+    color: #e2f1e1;
+}
+#into button {
+    margin-top: 0;
+    width: 100%;
+    height: 50px;
+    background: orange;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+}
+#inrdiv {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+/*sled section*/
+
+#sled {
+    width: 100%;
+    max-width: 100vw;
+    height: 850px;
+    /*background: #16dedd;*/
+    background: url(../img/21.png) no-repeat center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: #fff;
+    padding-top: 100px;
+}
+#sled h1 {
+    margin: 25px 30% 0 31%;
+    font-size: 130px;
+}
+#ldiv1 {
+    width: 49%;
+    height: 550px;
+}
+#ldiv1 {
+    /*background: url(../img/21.png) no-repeat center;*/
+    background-size: 100% 100%;
+}
+#rdiv1 {
+    width: 49%;
+    height: 600px;
+    margin-left: 0;
+    color: #fff;
+}
+#rdiv1 h2 {
+    margin-top: 0;
+    font-size: 60px;
+    font-weight: 800;
+    color: #4d6773;
+    margin-bottom: 0;
+    line-height: 1em;
+}
+#rdiv1 h3 {
+    font-weight: 500;
+}
+#rdiv1 button {
+    margin-top: 10px;
+    border: 1px solid #e2f1e1;
+    width: 250px;
+    height: 70px;
+    background-color: #0feae8b0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+#rdiv1 img {
+    margin: 0 0 0 60%;
+    width: 220px;
+    height: 200px;
+}
+/*yangi bo'lim*/
+
+.hero {
+    width: 100%;
+    max-width: 100vw;
+    height: 900px;
+    background: #00c4c5;
+}
+#con {
+    width: 85%;
+    max-width: 100vw;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.hero h3 {
+    font-size: 55px;
+    color: #4d6773;
+    line-height: 1em;
+    font-weight: 800;
+}
+#back {
+    margin-top: 0;
+    padding: 25px;
+    width: 100%;
+    height: 550px;
+    background: #e29303;
+    color: #fff;
+    z-index: -1;
+}
+#back h1 {
+    margin-top: 0;
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 1em;
+}
+#back h4 {
+    font-weight: 600;
+    line-height: 1.5em;
+}
+#back button {
+   
+    width: 200px;
+    height: 50px;
+    background-color: #fbef8c;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+}
+#back i {
+    size: 7x;
+}
+#back img {
+    margin-top: 0;
+    width: 100%;
+    height: 300px;
+}
+#air {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#symbol {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-left: 80%;
+}
+.sym {
+    margin: 15px;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    background: transparent;
+    border: 1px solid #e2f1e1;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+}
+.sym:hover {
+    background-color: orange;
+}
+#sled1 {
+    width: 100%;
+    max-width: 100vw;
+    height: 850px;
+    background: #16dedd;
+    color: #fff;
+    padding-top: 80px;
+}
+#sled1 h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 120px;
+    font-size: 55px;
+    color: #4d6773;
+    line-height: 1em;
+    font-weight: 600;
+}
+#sled1 h2 {
+    font-weight: 100;
+    font-size: 60px;
+}
+#sled1 h4 {
+    font-size: 24px;
+}
+#sled1 h5 {
+    font-size: 18px;
+    line-height: 2em;
+    width: 50%;
+}
+#sled1 button {
+    margin-top: 30px;
+    width: 250px;
+    height: 50px;
+    background: #0feae8b0;
+    color: #fff;
+    font-size: 24px;
+    border: 1px solid #e2f1e1;
+}
+#sled1 img {
+    width: 550px;
+    height: 350px;
+}
+.foot {
+    margin-top: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.foot li {
+    width: 22%;
+}
+#footer {
+    width: 100%;
+    max-width: 100vw;
+    height: 300px;
+    padding-top: 40px;
+    background: #00c4c5;
+    color: #fff;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    color: #265f5fd1;
+}
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+.footer h3 {
+    font-size: 24px;
+    color: #edf5ec
+}
+@media screen and (max-width: 1200px) {
+    #sled h1 {
+        font-size: 115px;
+    }
+    #sled1 h2 {
+        font-size: 45px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .con {
+        width: 98%;
+    }
+    #sled h1 {
+        font-size: 100px;
+        margin-top: 0;
+    }
+    .hero {
+        padding-top: 0;
+    }
+    #back {
+        padding: 10px;
+    }
+    #back h1 {
+        font-size: 50px;
+    }
+    #symbol {
+        margin-left: 75%;
+    }
+}
+@media screen and (max-width: 992px) {
+    #into form select {
+        width: 100px;
+    }
+   #back img {
+    width: 400px;
+   }
+    #sled h1 {
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #logo {
+        width: 7%;
+    }
+    #inrdiv {
+        margin-bottom: 0;
+    }
+    #into {
+        height: 530px;
+    }
+    #into button {
+        margin-top: 0;
+    }
+    #back img {
+        width: 300px;
+    }
+    #symbol {
+        margin-left: 70%;
+    }
+    #sled {
+        padding-top: 30px;
+    }
+    #ldiv1 {
+        height: 440px;
+    }
+    #rdiv1 h2 {
+        font-size: 40px;
+    }
+    #rdiv1 h3 {
+
+        font-size: 15px;
+    }
+    #rdiv br {
+        display: none;
+    }
+    #rdiv1 img {
+        margin: 0;
+        width: 100%;
+        height: 250px;
+    }
+    #sled1 h2 {
+        font-size: 40px
+    }
+    #sled1 h3 {
+        font-size: 45px;
+    }
+    #sled1 h5 {
+        line-height: 1em;
+    }
+    #con {
+        margin: auto;
+    }
+    .hero h4 {
+        margin-top: 0;
+    }
+    .hero img {
+        width: 330px;
+        height: 300px;
+        margin-left: 30px;
+    }
+    .hero br {
+        display: none;
+    }
+    #sled1 img {
+        margin-left: 20px !important;
+        width: 280px;
+    }
+}
+@media screen and (max-width: 414px) {
+    header .menu, header .soc {
+        display: none;
+    }
+    #bars {
+        display: inline-block;
+        margin: auto;
+        margin-right: 10px;
+    }
+    #ldiv {
+        display: none;
+    }
+    #rdiv {
+        width: 100%;
+    }
+    #rdiv h1 {
+        font-size: 60px;
+    }
+    #sled {
+        height: 700px;
+    }
+    #sled h1 {
+        font-size: 50px;
+    }
+    #ldiv1 {
+        display: none;
+    }
+    #rdiv1 {
+        width: 100%;
+        margin: auto;
+    }
+    #rdiv1 img {
+        margin-top: 50px;
+    }
+    #con {
+        width: 95%;
+    }
+    #con h3 {
+        font-size: 35px;
+    }
+    #back {
+        height: 580px
+    }
+    #back h1 {
+        font-size: 30px;
+    }
+    #back ul {
+        flex-direction: column;
+    }
+    #back img {
+        margin: auto;
+        margin-top: 10px;
+        width: 345px;
+        height: 270px;
+    }
+    #symbol {
+        margin-left: 30%;
+    }
+    #sled1 {
+        height: 550px;
+    }
+    #sled1 h3 {
+        margin: 0;
+    }
+    #sled1 h5 {
+        width: 95%;
+        line-height: 2em;
+    }
+    .foot {
+        display: none;
+    }
+    .foot h2 {
+        font-size: 20px;
+    }
+    p + img {
+        display: none;
+    }
+    #footer {
+        height: 400px;
+    }
+    #footer .con {
+      flex-direction: column;
+    }
+    #footer .menu {
+        display: none;
+    }
+
+    #footer .z {
+        margin-left: 15px;
+    }
+    .footer {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 375px) {
+    .con {
+        padding: 0 5px;
+    }
+    #rdiv {
+        margin-left: 0;
+    }
+    #con {
+        padding: 0 5px;
+    }
+    #con h3 {
+        font-size: 30px;
+    }
+    #back img {
+        margin: auto;
+        margin-top: 10px;
+        width: 100%;
+        height: 270px;
+    }
+    #sled {
+        height: 500px;
+    }
+    #sled1 {
+        height: 450px;
+        padding-left: 5px;
+    }
+    #rdiv1 h3 {
+        line-height: 1.5em
+    }
+    #rdiv1 button {
+        margin: 0;
+    }
+    #sled1 h5 {
+        width: 95%;
+        line-height: 1.3em;
+    }
+    #footer {
+        padding-left: 5px;
+    }
+}
